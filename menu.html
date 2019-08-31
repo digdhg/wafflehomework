@@ -3,35 +3,20 @@
 <head>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js" ></script>
   <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
-  <style>
-    a:link{
-      color: blue;
-    }
-    a:visited {
-      color: darkblue;
-      text-decoration: underline;
-    }
-    a:hover {
-      color: orange;
-    }
-    a:active {
-      color: skyblue;
-    }
-  </style>
   <title> 2019 가을학기 WaffleStudio 지원 </title>
 </head>
 <body>
   <div id="app">
-    <router-link to="/test1"> name1 </router-link>
-    <router-link to="/test2"> name2 </router-link>
+    <router-link to="/test1"> 학적 </router-link>
+    <router-link to="/test2"> 이메일 </router-link>
     <hr>
     <!-- 라우터 화면이 아래에 출력 -->
     <router-view></router-view>
   </div>
 
   <script>
-    var test1 = {template:'<div> test1 </div>'}
-    var test2 = {template:'<div> test2 </div>'}
+    var test1 = {template:'<div> 서울대학교 컴퓨터공학부 18학번 서영호 </div>'}
+    var test2 = {template:'<div> graysea2@snu.ac.kr </div>'}
     var routes =[
       {path:'/test1', component: test1},
       {path:'/test2', component: test2}
